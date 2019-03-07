@@ -47,6 +47,11 @@ index 0000000..26cebd4
 +
 +add_library (jigsaw SHARED jigsaw.cpp)
 +target_compile_definitions (jigsaw PRIVATE NDEBUG __lib_jigsaw)
++set_target_properties(jigsaw PROPERTIES WINDOWS_EXPORT_ALL_SYMBOLS TRUE)
++
++add_library(libjigsaw STATIC jigsaw.cpp)
++target_compile_definitions (libjigsaw PRIVATE NDEBUG __lib_jigsaw)
++
 diff --git a/uni/CMakeLists.txt b/uni/CMakeLists.txt
 new file mode 100644
 index 0000000..d44de25

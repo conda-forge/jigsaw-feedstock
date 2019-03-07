@@ -4,13 +4,14 @@ set PATH=%PREFIX%\cmake-bin\bin;%PATH%
 mkdir build
 cd build
 
-cmake -DCMAKE_INSTALL_PREFIX=%LIBRARY_PREFIX%  ^
-      -DCMAKE_BUILD_TYPE=Release               ^
-      %SRC_DIR%
+set CMAKE_FLAGS=-DCMAKE_INSTALL_PREFIX=%PREFIX%
+set CMAKE_FLAGS=%CMAKE_FLAGS% -DCMAKE_BUILD_TYPE=Release
+
+cmake -G "NMake Makefiles" %CMAKE_FLAGS% ..
 if errorlevel 1 exit /b 1
 
-cmake --build . --config Release --target INSTALL -- VERBOSE=1
-if errorlevel 1 exit /b 1
+cmake --build . --config Release --target install
+if errorlevel 1 exit 1
 
 
 :: unit tests
