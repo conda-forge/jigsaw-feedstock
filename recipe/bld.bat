@@ -1,4 +1,5 @@
-set PATH=%PREFIX%\cmake-bin\bin;%PATH%
+:: Remove -GL from CXXFLAGS as this causes a fatal error
+set "CXXFLAGS= -MD"
 
 :: build and install JIGSAW
 mkdir build
