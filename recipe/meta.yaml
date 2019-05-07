@@ -1,5 +1,5 @@
 {% set name = "JIGSAW" %}
-{% set version = "0.9.8" %}
+{% set version = "0.9.10" %}
 
 package:
   name: {{ name|lower }}
@@ -7,9 +7,7 @@ package:
 
 source:
   url: https://github.com/dengwirda/jigsaw/archive/v{{ version}}.tar.gz
-  sha256: 75b2a7454b8fc3cc7d95475f915101d35ba0e434630f4668601772320f016ed2
-  patches:
-    - 0001-add-cmake-support.patch
+  sha256: 07877b751f9fa7b31a4e2cbb7aabd30bcc61a356dfbbb182f1dfda97d83ec441
 
 build:
   number: 0
@@ -25,7 +23,7 @@ test:
   source_files:
     - example.jig
     - geo/bunny.msh
-    - out/temp.txt
+    - out/.keep
   commands:
     - jigsaw example.jig
 
