@@ -16,7 +16,7 @@ mkdir build
 cd build
 cmake -DCMAKE_INSTALL_PREFIX=${PREFIX} -DCMAKE_BUILD_TYPE=BUILD_MODE ..
 cmake --build . --config Release
-for test in 1 2 3 4 5 6
+for test in 1 2 3 4 5 6 7 8 9
 do
   ./test_${test}
 done
