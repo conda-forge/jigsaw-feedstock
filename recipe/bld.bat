@@ -50,3 +50,12 @@ if errorlevel 1 exit /b 1
 
 .\Release\test_6.exe
 if errorlevel 1 exit /b 1
+
+.\Release\test_7.exe
+if errorlevel 1 exit /b 1
+
+.\Release\test_8.exe
+if errorlevel 1 exit /b 1
+
+.\Release\test_9.exe
+if errorlevel 1 exit /b 1
