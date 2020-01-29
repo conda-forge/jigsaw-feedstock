@@ -1,5 +1,5 @@
 {% set name = "JIGSAW" %}
-{% set version = "0.9.11" %}
+{% set version = "0.9.12" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/dengwirda/jigsaw/archive/v{{ version}}.tar.gz
-  sha256: ac0b880c237a2ae4ae3dd64f0f136cb11f89f97bb6aafbbd1a2ceda5f8bc0216
+  sha256: a6e35939825b114befd478921737efc6e2137cfe1157c19e5a9aca77cc3747be
 
 build:
   number: 0
