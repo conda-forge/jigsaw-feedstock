@@ -5,7 +5,8 @@ set "CXXFLAGS= -MD"
 mkdir build
 cd build
 
-set CMAKE_FLAGS=-DCMAKE_INSTALL_PREFIX=%PREFIX%
+set CMAKE_FLAGS=-G "NMake Makefiles"
+set CMAKE_FLAGS=%CMAKE_FLAGS% -DCMAKE_INSTALL_PREFIX=%PREFIX%
 set CMAKE_FLAGS=%CMAKE_FLAGS% -DCMAKE_BUILD_TYPE=Release
 
 cmake %CMAKE_FLAGS% ..
@@ -28,24 +29,29 @@ if errorlevel 1 exit /b 1
 cmake --build . --config Release
 if errorlevel 1 exit /b 1
 
-dir
-
-dir Release
-
-.\Release\test_1.exe
+.\test_1.exe
 if errorlevel 1 exit /b 1
 
-.\Release\test_2.exe
+.\test_2.exe
 if errorlevel 1 exit /b 1
 
-.\Release\test_3.exe
+.\test_3.exe
 if errorlevel 1 exit /b 1
 
-.\Release\test_4.exe
+.\test_4.exe
 if errorlevel 1 exit /b 1
 
-.\Release\test_5.exe
+.\test_5.exe
 if errorlevel 1 exit /b 1
 
-.\Release\test_6.exe
+.\test_6.exe
+if errorlevel 1 exit /b 1
+
+.\test_7.exe
+if errorlevel 1 exit /b 1
+
+.\test_8.exe
+if errorlevel 1 exit /b 1
+
+.\test_9.exe
 if errorlevel 1 exit /b 1
