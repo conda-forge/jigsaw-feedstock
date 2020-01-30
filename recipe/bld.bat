@@ -29,31 +29,29 @@ if errorlevel 1 exit /b 1
 cmake --build . --config Release
 if errorlevel 1 exit /b 1
 
-dir
-
-.\Release\test_1.exe
+.\test_1.exe
 if errorlevel 1 exit /b 1
 
-.\Release\test_2.exe
+.\test_2.exe
 if errorlevel 1 exit /b 1
 
-.\Release\test_3.exe
+.\test_3.exe
 if errorlevel 1 exit /b 1
 
-.\Release\test_4.exe
+.\test_4.exe
 if errorlevel 1 exit /b 1
 
-.\Release\test_5.exe
+.\test_5.exe
 if errorlevel 1 exit /b 1
 
-.\Release\test_6.exe
+.\test_6.exe
 if errorlevel 1 exit /b 1
 
-.\Release\test_7.exe
+.\test_7.exe
 if errorlevel 1 exit /b 1
 
-.\Release\test_8.exe
+.\test_8.exe
 if errorlevel 1 exit /b 1
 
-.\Release\test_9.exe
+.\test_9.exe
 if errorlevel 1 exit /b 1
