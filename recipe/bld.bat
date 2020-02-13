@@ -16,6 +16,9 @@ if errorlevel 1 exit /b 1
 cmake --build . --config Release --target install
 if errorlevel 1 exit 1
 
+:: Move dll to bin directory
+move %LIBRARY_LIB%\jigsaw.dll %LIBRARY_BIN% || exit 1
+
 cd ..
 
 :: unit tests
