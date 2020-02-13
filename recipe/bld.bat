@@ -5,9 +5,10 @@ set "CXXFLAGS= -MD"
 mkdir build
 cd build
 
-set CMAKE_FLAGS=-G "NMake Makefiles"
-set CMAKE_FLAGS=%CMAKE_FLAGS% -DCMAKE_INSTALL_PREFIX=%PREFIX%
-set CMAKE_FLAGS=%CMAKE_FLAGS% -DCMAKE_BUILD_TYPE=Release
+set CMAKE_FLAGS=-G "NMake Makefiles" ^
+                -DCMAKE_INSTALL_PREFIX:PATH="%LIBRARY_PREFIX%" ^
+                -DCMAKE_PREFIX_PATH:PATH="%LIBRARY_PREFIX%" ^
+                -DCMAKE_BUILD_TYPE=Release
 
 cmake %CMAKE_FLAGS% ..
 if errorlevel 1 exit /b 1
