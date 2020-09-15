@@ -27,10 +27,15 @@ cd uni
 mkdir build
 cd build
 
+set CMAKE_FLAGS=-G "NMake Makefiles" ^
+                -DCMAKE_INSTALL_PREFIX:PATH="%LIBRARY_PREFIX%" ^
+                -DCMAKE_PREFIX_PATH:PATH="%LIBRARY_PREFIX%" ^
+                -DCMAKE_BUILD_TYPE=Debug
+
 cmake %CMAKE_FLAGS% ..
 if errorlevel 1 exit /b 1
 
-cmake --build . --config Release
+cmake --build . --config Debug
 if errorlevel 1 exit /b 1
 
 .\test_1.exe
