@@ -11,19 +11,19 @@ Summary: JIGSAW is a Delaunay-based unstructured mesh generator for two- and
 three-dimensional geometries.
 
 
-`JIGSAW` is an unstructured mesh generator and tessellation library; designed 
-to generate high-quality triangulations and polyhedral decompositions of general 
-planar, surface and volumetric domains. `JIGSAW` includes refinement-based 
-algorithms for the construction of new meshes, optimisation-driven techniques 
-for the improvement of existing grids, as well as routines to assemble 
-(restricted) Delaunay tessellations, Voronoi complexes and Power diagrams. 
+JIGSAW is a computational library for unstructured mesh generation and
+tessellation; designed to generate high-quality triangulations and
+polyhedral decompositions of general planar, surface and volumetric
+domains. JIGSAW includes refinement-based algorithms for the construction
+of new meshes, optimisation-driven techniques for the improvement of
+existing grids, as well as routines to assemble (restricted) Delaunay
+tessellations and Voronoi complexes.
 
-This package provides the underlying `c++` source for `JIGSAW`; defining a basic 
-command-line interface and a `c`-format `API`. Higher-level scripting interfaces, 
-supporting a range of additional facilities for file I/O, mesh visualisation and 
-post-processing operations are also available, including for 
-`MATLAB` / `OCTAVE` <a href="https://github.com/dengwirda/jigsaw-matlab">here</a> 
-and for `PYTHON` <a href="https://github.com/dengwirda/jigsaw-python">here</a>.
+This package provides the underlying C++ source for JIGSAW; defining a
+basic command-line interface and a C-format API. A MATLAB / OCTAVE based
+scripting interface, including a range of additional facilities for file
+I/O, mesh visualisation and post-processing operations can be found at
+https://github.com/dengwirda/jigsaw-matlab.
 
 
 Current build status
