@@ -5,11 +5,15 @@ Home: https://github.com/dengwirda/jigsaw
 
 Package license: custom
 
-Feedstock license: BSD-3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/jigsaw-feedstock/blob/master/LICENSE.txt)
 
 Summary: JIGSAW is a Delaunay-based unstructured mesh generator for two- and
 three-dimensional geometries.
 
+
+Development: https://github.com/dengwirda/jigsaw
+
+Documentation: https://github.com/dengwirda/jigsaw
 
 `JIGSAW` is an unstructured mesh generator and tessellation library;
 designed to generate high-quality triangulations and polyhedral
