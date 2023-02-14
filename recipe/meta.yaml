@@ -10,7 +10,7 @@ source:
   sha256: f312ea0bc3ca697ea0f559b8404d0afe3e35dd0b39efc0efdfb9a9a57bee16d7
 
 build:
-  number: 0
+  number: 1
   skip: true  # [win and vc<14]
 
 requirements:
@@ -18,6 +18,7 @@ requirements:
     - {{ compiler('c') }}
     - {{ compiler('cxx') }}
     - cmake
+    - make
 
 test:
   source_files:
