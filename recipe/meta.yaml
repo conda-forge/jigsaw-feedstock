@@ -20,6 +20,7 @@ requirements:
     - cmake
     - make
 
+{% if build_platform == target_platform %}
 test:
   source_files:
     - example.jig
@@ -27,6 +28,7 @@ test:
     - out/.keep
   commands:
     - jigsaw example.jig
+{% endif %}
 
 about:
   home: https://github.com/dengwirda/jigsaw
