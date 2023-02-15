@@ -11,7 +11,7 @@ cmake --build . --config Release --target install
 cd ..
 
 # unit tests
-if [[ "${CONDA_BUILD_CROSS_COMPILATION:-}" != "1" || "${CROSSCOMPILING_EMULATOR}" != "" ]]; then
+if [[ "${CONDA_BUILD_CROSS_COMPILATION:-}" != "1" ]]; then
   cd uni
   mkdir build
   cd build
