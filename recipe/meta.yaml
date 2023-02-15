@@ -20,15 +20,13 @@ requirements:
     - cmake
     - make
 
-{% if build_platform == target_platform %}
 test:
   source_files:
     - example.jig
     - geo/bunny.msh
     - out/.keep
   commands:
-    - jigsaw example.jig
-{% endif %}
+    - jigsaw example.jig  # [build_platform == target_platform]
 
 about:
   home: https://github.com/dengwirda/jigsaw
